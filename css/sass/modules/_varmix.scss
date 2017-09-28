@@ -1,0 +1,29 @@
+// color
+
+
+
+
+
+@mixin transition($elt, $time, $easing, $delay:null){
+
+	@if($delay== null){
+		$delay: 0s;		
+	}
+
+	-webkit-transition:$elt $time $easing $delay;
+	-moz-transition:$elt $time $easing $delay;
+	-ms-transition:$elt $time $easing $delay;
+	-o-transition:$elt $time $easing $delay;
+	transition:$elt $time $easing $delay;
+
+}
+
+@mixin transform($it){
+
+	-webkit-transform:$it;
+	-moz-transform:$it;
+	-ms-transform:$it;
+	-o-transform:$it;
+	transform:$it;
+
+}
